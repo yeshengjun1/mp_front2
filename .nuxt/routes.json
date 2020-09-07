@@ -1,0 +1,86 @@
+[
+  {
+    "name": "actor",
+    "path": "/actor",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/actor/index.vue",
+    "chunkName": "pages/actor/index"
+  },
+  {
+    "name": "comments",
+    "path": "/comments",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/comments/index.vue",
+    "chunkName": "pages/comments/index"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/login.vue",
+    "chunkName": "pages/login"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/register.vue",
+    "chunkName": "pages/register"
+  },
+  {
+    "name": "resource",
+    "path": "/resource",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/resource/index.vue",
+    "chunkName": "pages/resource/index"
+  },
+  {
+    "name": "resource-comic",
+    "path": "/resource/comic",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/resource/comic/index.vue",
+    "chunkName": "pages/resource/comic/index"
+  },
+  {
+    "name": "resource-documentary",
+    "path": "/resource/documentary",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/resource/documentary/index.vue",
+    "chunkName": "pages/resource/documentary/index"
+  },
+  {
+    "name": "resource-movie",
+    "path": "/resource/movie",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/resource/movie/index.vue",
+    "chunkName": "pages/resource/movie/index"
+  },
+  {
+    "name": "resource-teleplay",
+    "path": "/resource/teleplay",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/resource/teleplay/index.vue",
+    "chunkName": "pages/resource/teleplay/index"
+  },
+  {
+    "name": "actor-id",
+    "path": "/actor/:id",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/actor/_id.vue",
+    "chunkName": "pages/actor/_id"
+  },
+  {
+    "name": "player-vid",
+    "path": "/player/:vid?",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/player/_vid.vue",
+    "chunkName": "pages/player/_vid"
+  },
+  {
+    "name": "resource-id",
+    "path": "/resource/:id",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/resource/_id.vue",
+    "chunkName": "pages/resource/_id"
+  },
+  {
+    "name": "seacher-key",
+    "path": "/seacher/:key?",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/seacher/_key.vue",
+    "chunkName": "pages/seacher/_key"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]
