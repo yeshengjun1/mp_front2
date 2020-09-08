@@ -20,7 +20,7 @@
                 </li>
                 <li v-for="(item,index) in classifictionList" :key="index" >
                   <!-- todo -->
-                  <a :title="item.title"  href="javascript:void;" :class="{linkActive:oneIndex == index}" @click.prevent="showResourceInfo(1,item.id,index)">{{item.title}}</a>
+                  <a :title="item.title"  href="javascript:void(0);" :class="{linkActive:oneIndex == index}" @click.prevent="showResourceInfo(1,item.id,index)">{{item.title}}</a>
                 </li>
               </ul>
             </dd>
@@ -128,7 +128,7 @@ export default {
           if(response.data.data.map.totalPage){
             this.totalPage =  response.data.data.map.totalPage
           }
-          
+
         }
       )
     },

@@ -1,6 +1,6 @@
 <template>
   <div>
-      <!-- <el-main>
+    <el-main>
         <comments
         v-for="comment in comments"
         :key="comment.id"
@@ -12,14 +12,14 @@
         :hasReply="replys[comment.id] && replys[comment.id].length > 0"
         @clickAvatar="handleClickAvatar(comment)"
         @clickAuthor="handleClickAuthor(comment)"
-        @addReply="handleAddReply(comment)" 
+        @addReply="handleAddReply(comment)"
         @showComments="commentShow(comment)"
         >
-        
+
         <reply v-for="reply in replys[comment.id]" :key="reply.id" :author="reply.nickname" :content="reply.content" :time="reply.gmtCreate">
         </reply>
         </comments>
-    </el-main> -->
+    </el-main>
   </div>
 </template>
 <script>
@@ -52,10 +52,10 @@ export default {
     //         response => {
     //             response = response.data.data.items
     //             self.comments = response ? [].concat(response) : []
-                
+
     //             if (self.comments.length > 0) {
     //               this.listReply()
-    //             }          
+    //             }
     //         }
     //     )
     // },
@@ -71,7 +71,7 @@ export default {
     //     .then(response => {
     //       response = response.data.data.items
     //       self.$set(self.replys, value.id, response ? [].concat(response) : [])
-          
+
     //     })
     //   }
     // },

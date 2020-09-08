@@ -25,7 +25,7 @@
             <router-link to="/resource/documentary?rclass=1285866956918435841" tag="li" active-class="current">
               <a>纪录片</a>
             </router-link>
-            <router-link to="/qa" tag="li" active-class="current">
+            <router-link to="/feedback" tag="li" active-class="current">
               <a class="nav-a">反馈</a>
             </router-link>
           </ul>
@@ -77,7 +77,7 @@
         <div class="clear"></div>
       </section>
     </header>
-    
+
     <!-- /公共头引入 -->
     <nuxt/>
     <side/>
@@ -186,7 +186,7 @@ export default {
     }
   },
   //搜索功能
-  
+
 }
 </script>
 <style scoped>

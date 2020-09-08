@@ -2,85 +2,106 @@
   {
     "name": "actor",
     "path": "/actor",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/actor/index.vue",
-    "chunkName": "pages/actor/index"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\actor\\\\index.vue",
+    "chunkName": "pages/actor/index",
+    "_name": "_1a93cbbe"
   },
   {
     "name": "comments",
     "path": "/comments",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/comments/index.vue",
-    "chunkName": "pages/comments/index"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\comments\\\\index.vue",
+    "chunkName": "pages/comments/index",
+    "_name": "_c3fdc6ac"
+  },
+  {
+    "name": "feedback",
+    "path": "/feedback",
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\feedback\\\\index.vue",
+    "chunkName": "pages/feedback/index",
+    "_name": "_4bc79a79"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/login.vue",
-    "chunkName": "pages/login"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\login.vue",
+    "chunkName": "pages/login",
+    "_name": "_7e3c2ab5"
   },
   {
     "name": "register",
     "path": "/register",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/register.vue",
-    "chunkName": "pages/register"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\register.vue",
+    "chunkName": "pages/register",
+    "_name": "_4c0213f2"
   },
   {
     "name": "resource",
     "path": "/resource",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/resource/index.vue",
-    "chunkName": "pages/resource/index"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\resource\\\\index.vue",
+    "chunkName": "pages/resource/index",
+    "_name": "_f1a77b60"
   },
   {
     "name": "resource-comic",
     "path": "/resource/comic",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/resource/comic/index.vue",
-    "chunkName": "pages/resource/comic/index"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\resource\\\\comic\\\\index.vue",
+    "chunkName": "pages/resource/comic/index",
+    "_name": "_2168a1ee"
   },
   {
     "name": "resource-documentary",
     "path": "/resource/documentary",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/resource/documentary/index.vue",
-    "chunkName": "pages/resource/documentary/index"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\resource\\\\documentary\\\\index.vue",
+    "chunkName": "pages/resource/documentary/index",
+    "_name": "_e6adb192"
   },
   {
     "name": "resource-movie",
     "path": "/resource/movie",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/resource/movie/index.vue",
-    "chunkName": "pages/resource/movie/index"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\resource\\\\movie\\\\index.vue",
+    "chunkName": "pages/resource/movie/index",
+    "_name": "_81a489d8"
   },
   {
     "name": "resource-teleplay",
     "path": "/resource/teleplay",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/resource/teleplay/index.vue",
-    "chunkName": "pages/resource/teleplay/index"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\resource\\\\teleplay\\\\index.vue",
+    "chunkName": "pages/resource/teleplay/index",
+    "_name": "_4143deb2"
   },
   {
     "name": "actor-id",
     "path": "/actor/:id",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/actor/_id.vue",
-    "chunkName": "pages/actor/_id"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\actor\\\\_id.vue",
+    "chunkName": "pages/actor/_id",
+    "_name": "_4f9630c9"
   },
   {
     "name": "player-vid",
     "path": "/player/:vid?",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/player/_vid.vue",
-    "chunkName": "pages/player/_vid"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\player\\\\_vid.vue",
+    "chunkName": "pages/player/_vid",
+    "_name": "_68818a57"
   },
   {
     "name": "resource-id",
     "path": "/resource/:id",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/resource/_id.vue",
-    "chunkName": "pages/resource/_id"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\resource\\\\_id.vue",
+    "chunkName": "pages/resource/_id",
+    "_name": "_42f2ce90"
   },
   {
     "name": "seacher-key",
     "path": "/seacher/:key?",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/seacher/_key.vue",
-    "chunkName": "pages/seacher/_key"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\seacher\\\\_key.vue",
+    "chunkName": "pages/seacher/_key",
+    "_name": "_d375af66"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/xieshengjun/devlop/mpvue/mp-front/pages/index.vue",
-    "chunkName": "pages/index"
+    "component": "D:\\\\project\\\\mp_front2\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_96d6f0c4"
   }
 ]

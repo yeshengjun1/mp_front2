@@ -19,7 +19,7 @@
         <span class="comments-reply-btn ml15" @click="showReply">回复</span>
       </p>
       <div v-if="replyBox" v-loading="loading">
-            <el-input 
+            <el-input
               type="textarea"
               :rows="2"
               placeholder="请输入内容"
@@ -68,7 +68,7 @@ export default {
     showReply(){
       let self = this
       let userInfo = cookie.get('mp_ucenter')
-      
+
       if(!userInfo){
           self.$message({
               type: 'error',

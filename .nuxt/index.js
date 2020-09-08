@@ -11,7 +11,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_nuxtswiperplugin_622602ba from 'nuxt_plugin_nuxtswiperplugin_622602ba' // Source: ../plugins/nuxt-swiper-plugin.js (mode: 'client')
+import nuxt_plugin_nuxtswiperplugin_622602ba from 'nuxt_plugin_nuxtswiperplugin_622602ba' // Source: ..\\plugins\\nuxt-swiper-plugin.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)

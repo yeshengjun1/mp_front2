@@ -13,7 +13,7 @@
                 <div class="video_tga" id="video_tga"></div>
                 <div style="clear:both;"></div>
             </div>
-            
+
             <h4 class="ctitle"><strong>在线播放:</strong></h4>
             <div id="video_list_li"  class="video_list_li">
                 <div class="vlink" style="margin-left: 10px;">
@@ -27,7 +27,7 @@
                 <span>{{resourceInfo.description}}</span>
             </p>
     </article>
-        
+
         <div class="article-tags">
             标签：<a href="javascript:void(0);" rel="tag">{{resourceInfo.twoLevelClassification}}</a>
          </div>
@@ -37,7 +37,7 @@
                 <em class="icon30 no-data-ico">&nbsp;</em>
                 <span class="c-666 fsize14 ml10 vam">没有相关数据，正在努力整理中...</span>
             </section>
-        
+
             <article v-for="(item,index) in relevantResourceList" :key="index" class="u-movie">
                 <a :title="item.title" :href="'/resource/' + item.id">
                     <div class="list-poster" style="height:170px!important;">
@@ -51,13 +51,13 @@
         <h3 class="title" id="comments">
             <div class="text-muted pull-right">
             </div>
-            <strong>歡迎留言/評論 <b> 0 </b></strong>
+            <strong>歡迎留言/評論 <b>  </b></strong>
         </h3>
-        
+
         <div id="respond" class="no_webshot">
                 <div class="comt-title">
                     <div class="comt-avatar">
-                        <img :data-original="user.avatar"
+                        <img :src="avatar"
                             class="avatar avatar-100" height="100" width="100"> </div>
                     <div class="comt-author">
                     </div>
@@ -74,7 +74,7 @@
                                     id='comment_post_ID' />
                                 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
                             </div>
-                            <!-- todo 提交前进行登录判断，未登录无法提交评论 -->
+                            <!--  提交前进行登录判断，未登录无法提交评论 -->
                             <button   id="submit" tabindex="5" @click="submitComment"><i
                                     class="icon-ok-circle icon-white icon12" ></i>提交</button>
                         </div>
@@ -97,15 +97,15 @@
                 @addReply="handleAddReply(comment)"
                 @showComment="listComments()"
                 >
-                <reply 
-                v-for="reply in replys[comment.id]" 
-                :key="reply.id" 
-                :rid="reply.id" 
-                :pid="comment.id" 
-                :author="reply.nickname" 
-                :content="reply.content" 
-                :time="reply.gmtCreate" 
-                :targetName="reply.targetName" 
+                <reply
+                v-for="reply in replys[comment.id]"
+                :key="reply.id"
+                :rid="reply.id"
+                :pid="comment.id"
+                :author="reply.nickname"
+                :content="reply.content"
+                :time="reply.gmtCreate"
+                :targetName="reply.targetName"
                 @showComment="listComments()">
                 </reply>
                 </comments>
@@ -115,7 +115,6 @@
 </template>
 <script>
 import resourceApi from "@/api/resource"
-import vod from '@/api/vod'
 import commentApi from "@/api/comment"
 import cookie from 'js-cookie'
 import comments from '@/components/comments.vue'
@@ -129,24 +128,39 @@ export default {
             vid: '',
             relevantResourceList: [],
             comment:{
-                
+
             },
             user:{},
             comments: [],
-            replys: {}
+            replys: {},
+            avatar: ''
         }
     },
     created(){
         this.listComments() //显示评论
         this.selectResource() //显示资源
         this.showRelevantResource()//显示相关资源
+        // this.getUserInfo()
+
     },
-    components: {                                                                                                                                                         comments,
+
+    components: {
+      comments,
         reply,
     },
     mounted(){
+      this.getAvatar()
     },
     methods: {
+        getAvatar(){
+          let info = cookie.get('mp_ucenter')
+          if (!info){
+            return
+          }
+          info = JSON.parse(info)
+          this.avatar = info.avatar
+
+        },
         stopSubmit(){
             return false
         },
@@ -171,7 +185,7 @@ export default {
         submitComment(){
             let self = this
             let userInfo = cookie.get('mp_ucenter')
-            
+
             if(!userInfo){
                 self.$message({
                     type: 'error',
@@ -196,7 +210,7 @@ export default {
 
                 }
             )
-            
+
         },
         //显示评论列表
         listComments (){
@@ -208,10 +222,10 @@ export default {
                 response => {
                     response = response.data.data.items
                     self.comments = response ? [].concat(response) : []
-                    
+
                     if (self.comments.length > 0) {
-                    this.listReply() // todo 二级回复列表展示
-                    }          
+                    this.listReply() //  二级回复列表展示
+                    }
                 }
         )},
         listReply () {
@@ -241,7 +255,7 @@ export default {
         commentShow(item){
             console.log("index.vue");
         }
-    }  
+    }
 };
 </script>
 <style scoped >

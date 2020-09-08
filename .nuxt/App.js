@@ -5,11 +5,11 @@ import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch,
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
-import '../node_modules/swiper/dist/css/swiper.css'
+import '..\\node_modules\\swiper\\dist\\css\\swiper.css'
 
-import _6f6c098b from '../layouts/default.vue'
-import _2d297eb3 from '../layouts/sign.vue'
-import _78309245 from '../layouts/video.vue'
+import _6f6c098b from '..\\layouts\\default.vue'
+import _2d297eb3 from '..\\layouts\\sign.vue'
+import _78309245 from '..\\layouts\\video.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b),"_sign": sanitizeComponent(_2d297eb3),"_video": sanitizeComponent(_78309245) }
 
